@@ -5,17 +5,17 @@ import styles from "./style"
 export default function ResultImc(props){
     let message = "";
     if (props.ResultImc) {
-        const imcValue = parseFloat(props.ResultImc);
-        if (imcValue < 16.9) {
-            message = "Muito abaixo do peso.";
-        } else if (imcValue < 18.4) {
-            message = "Abaixo do peso.";
-        } else if (imcValue < 24.9) {
-            message = "Peso normal.";
-        } else if (imcValue < 29.9) {
-            message = "Acima do peso.";
+        const BMIValue = parseFloat(props.ResultImc);
+        if (BMIValue < 16.9) {
+            message = "Very Under Weight.";
+        } else if (BMIValue < 18.5) {
+            message = "Under Weight.";
+        } else if (BMIValue < 24.9) {
+            message = "Normal weight.";
+        } else if (BMIValue < 29.9) {
+            message = "Overweight.";
         } else {
-            message = "Obesidade.";
+            message = "Obesity.";
         }
     }
 

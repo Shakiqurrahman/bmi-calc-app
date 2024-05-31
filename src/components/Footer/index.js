@@ -6,7 +6,7 @@ export default function Title(){
     return(
         <View style={styles.boxTitle}>
             <Text style={styles.textTitle}>
-                BMI Calculator
+                @Shakiqur Rahman - 577860
             </Text>
         </View>
     )

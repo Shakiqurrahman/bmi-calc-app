@@ -7,9 +7,9 @@ export default function Form() {
 
 const [height, setHeight]= useState(null)
 const [weight, setWeight]= useState(null)
-const [messageImc, setMessageImc]= useState("prencha o peso e altura");
+const [messageImc, setMessageImc]= useState("fill in the weight and height");
 const [imc, setImc]= useState(null)
-const [textButton, setTextButton]= useState("Calcular")
+const [textButton, setTextButton]= useState("Calculate")
 
 function imcCalculator(){
   return setImc((weight/(height*height)).toFixed(2))
@@ -20,19 +20,19 @@ function validationImc(){
     imcCalculator()
     setHeight(null)
     setWeight(null)
-    setMessageImc("Seu IMC é igual: ")
-    setTextButton("Calcular Novamente")
+    setMessageImc("Your BMI ")
+    setTextButton("Calculate Again")
     return
   }
   setImc(null)
-  setTextButton("Calcular")
-  setMessageImc("preencha o peso e a altura")
+  setTextButton("Calculate")
+  setMessageImc("fill in the weight and height")
 }
 
   return (
     <View style={styles.formContext}>
         <View style={styles.form}>
-            <Text style={styles.formLabel}>Altura</Text>
+            <Text style={styles.formLabel}>Height</Text>
             <TextInput style={styles.input} 
             onChangeText={setHeight}
             value={height}
@@ -40,7 +40,7 @@ function validationImc(){
             keyboardType="numeric"
             />
             
-            <Text style={styles.formLabel}>Peso</Text>
+            <Text style={styles.formLabel}>Weight</Text>
             <TextInput style={styles.input}
             onChangeText={setWeight}
             value={weight}
