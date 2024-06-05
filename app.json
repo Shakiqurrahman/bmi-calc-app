@@ -1,13 +1,13 @@
 {
   "expo": {
     "name": "BMI Calculator",
-    "slug": "BMI",
+    "slug": "my-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/bmi-calc3.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/bmi-calc3.png",
       "resizeMode": "contain",
       "backgroundColor": "#000000"
     },
