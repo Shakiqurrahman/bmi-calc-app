@@ -31,18 +31,23 @@ const styles = StyleSheet.create({
         backgroundColor: "#f6f6f6",
         height:40,
         margin: 12,
-        paddingLeft: 10,
+        paddingLeft: 20,
     },
     buttonCalculator:{
         borderRadius: 50,
         alignItems: "center",
         justifyContent: "center",
         width: "90%",
-        backgroundColor: "#ff0043",
+        backgroundColor: "#00754B",
         paddingTop: 14,
         paddingBottom: 14,
         marginLeft: 12,
-        margin: 30,
+    },
+    error : {
+        marginTop:5,
+        fontSize: 18,
+        color: "#E90F0F",
+        textAlign: "center"
     },
 
     textButtonCalculator:{

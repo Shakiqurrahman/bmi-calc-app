@@ -6,7 +6,7 @@ export default function Title(){
     return(
         <View style={styles.boxTitle}>
             <Text style={styles.textTitle}>
-                @Shakiqur Rahman - 577860
+                @Md Rakibul Islam Bhuiyan Remon - 577900
             </Text>
         </View>
     )
