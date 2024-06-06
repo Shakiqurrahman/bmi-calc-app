@@ -7,10 +7,15 @@ const styles = StyleSheet.create({
         padding: "10",
     },
     textTitle:{
-        color: "#00754B",
+        color: "#FF869C",
         fontSize: 24,
         fontWeight: "bold",
+    },
+    author : {
+        fontSize: 12,
+        marginTop: 6
     }
+
 });
 
 export default styles

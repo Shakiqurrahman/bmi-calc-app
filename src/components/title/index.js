@@ -8,6 +8,9 @@ export default function Title(){
             <Text style={styles.textTitle}>
                 BMI Calculator
             </Text>
+            <Text style={styles.author}>
+                @Adil Ahmed Sayem - 577846
+            </Text>
         </View>
     )
 }

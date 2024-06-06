@@ -11,7 +11,7 @@ const styles = StyleSheet.create ({
     },
     numberImc:{
         fontSize: 48,
-        color: "#00754B",
+        color: "#FF869C",
         fontWeight: "bold",
     },
     bmiTitle:{

@@ -32,20 +32,19 @@ function validationBmi(){
   return (
     <View style={styles.formContext}>
         <View style={styles.form}>
+        <Text style={styles.formLabel}>Weight</Text>
+            <TextInput style={styles.input}
+            onChangeText={setWeight}
+            value={weight}
+            placeholder="Enter Your Weight"
+            keyboardType="numeric" 
+            />
             <Text style={styles.formLabel}>Height</Text>
             <TextInput style={styles.input} 
             onChangeText={setHeight}
             value={height}
             placeholder="Enter Your Height"
             keyboardType="numeric"
-            />
-            
-            <Text style={styles.formLabel}>Weight</Text>
-            <TextInput style={styles.input}
-            onChangeText={setWeight}
-            value={weight}
-            placeholder="Enter Your Weight"
-            keyboardType="numeric" 
             />
            <TouchableOpacity style={styles.buttonCalculator}
            onPress={() =>{
