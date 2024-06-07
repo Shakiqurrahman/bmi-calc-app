@@ -32,21 +32,29 @@ export default function Form() {
         <View style={styles.formContext}>
             <View style={styles.form}>
                 <Text style={styles.formLabel}>Weight</Text>
+                <View style={styles.inputContainer}>
+                {!weight && <Text style={styles.placeholder}>Enter your Weight</Text>}
                 <TextInput
                     style={styles.input}
                     onChangeText={setWeight}
                     value={weight}
-                    placeholder="Your Weight"
                     keyboardType="numeric"
                 />
+                </View>
                 <Text style={styles.formLabel}>Height</Text>
-                <TextInput
-                    style={styles.input}
-                    onChangeText={setHeight}
-                    value={height}
-                    placeholder="Your Height"
-                    keyboardType="numeric"
-                />
+                <View style={styles.inputContainer}>
+                    {!height && (
+                        <Text style={styles.placeholder}>
+                            Enter your height
+                        </Text>
+                    )}
+                    <TextInput
+                        style={styles.input}
+                        onChangeText={setHeight}
+                        value={height}
+                        keyboardType="numeric"
+                    />
+                </View>
                 <TouchableOpacity
                     style={styles.buttonCalculator}
                     onPress={() => {

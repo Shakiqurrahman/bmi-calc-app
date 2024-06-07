@@ -1,11 +1,15 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View , StatusBar } from "react-native";
 import Main from "./src/components/Main/";
 import Title from "./src/components/title/";
 
 export default function App() {
   return (
     <View style={styles.container}>
+      <StatusBar 
+        backgroundColor="#000"
+        barStyle="light-content"
+      />
       <Title />
       <Main />
     </View>
@@ -15,7 +19,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#200E3A",
     paddingTop: 80,
   },
 });

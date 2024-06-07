@@ -7,14 +7,14 @@ const styles = StyleSheet.create({
         padding: "10",
     },
     textTitle:{
-        color: "#2C4E80",
+        color: "#57C5B6",
         fontSize: 24,
         fontWeight: "bold",
     },
     author : {
         fontSize: 12,
-        marginBottom: 5,
-        // color: "#fff"
+        marginTop: 5,
+        color: "#fff"
     }
 
 });
