@@ -5,11 +5,11 @@ import styles from "./style"
 export default function Title(){
     return(
         <View style={styles.boxTitle}>
-            <Text style={styles.textTitle}>
-                BMI Calculator
-            </Text>
             <Text style={styles.author}>
-                @Adil Ahmed Sayem - 577846
+            Masuma Tabassum Tuly - 577913
+            </Text>
+            <Text style={styles.textTitle}>
+            BMI App
             </Text>
         </View>
     )

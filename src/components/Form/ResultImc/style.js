@@ -10,8 +10,8 @@ const styles = StyleSheet.create ({
 
     },
     numberImc:{
-        fontSize: 48,
-        color: "#FF869C",
+        fontSize: 30,
+        color: "#83B4FF",
         fontWeight: "bold",
     },
     bmiTitle:{
@@ -21,10 +21,10 @@ const styles = StyleSheet.create ({
 
     },
     information:{
-        fontSize:18,
+        fontSize:16,
         color: "#000000",
-        fontWeight: "bold",
-        marginBottom: 20,
+        // fontWeight: "bold",
+        marginBottom: 30,
 
     },
     error :{
