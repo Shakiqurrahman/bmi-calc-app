@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         paddingLeft: 20,
     },
     input:{
-        widht: "90%",
+        width: "95%",
         borderRadius: 10,
         backgroundColor: "#f6f6f6",
         height:50,
@@ -37,15 +37,16 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         alignItems: "center",
         justifyContent: "center",
-        width: "90%",
-        backgroundColor: "#83B4FF",
+        width: "95%",
+        backgroundColor: '#2C4E80',
         paddingTop: 14,
         paddingBottom: 14,
         marginLeft: 12,
+        marginTop: 10
     },
     error : {
-        marginTop:5,
-        fontSize: 18,
+        marginTop:10,
+        fontSize: 16,
         color: "#E90F0F",
         textAlign: "center"
     },

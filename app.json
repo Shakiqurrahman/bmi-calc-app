@@ -4,10 +4,10 @@
     "slug": "my-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/bmi-calc-tuly.jpg",
+    "icon": "./assets/bmi-calc-rafi.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/bmi-calc-tuly.jpg",
+      "image": "./assets/bmi-calc-rafi.png",
       "resizeMode": "contain",
       "backgroundColor": "#000000"
     },
@@ -19,13 +19,13 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/bmi-calc-tuly.jpg",
+        "foregroundImage": "./assets/bmi-calc-rafi.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.shakiqurrahman.myapp"
     },
     "web": {
-      "favicon": "./assets/bmi-calc-tuly.jpg"
+      "favicon": "./assets/bmi-calc-rafi.png"
     },
     "extra": {
       "eas": {
