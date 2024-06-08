@@ -29,7 +29,7 @@ export default function Form() {
             return;
         }
         setBmi(null);
-        setTextButton("Calculate");
+        setTextButton("Calculate Again");
         setMessageBmi("Please fill in the weight & height!");
     }
 

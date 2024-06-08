@@ -34,9 +34,9 @@ const styles = StyleSheet.create({
       placeholder: {
         position: 'absolute',
         left: 10,
-        top: 27,
+        top: 24,
         color: '#736E81', 
-        paddingLeft: 15,
+        paddingLeft: 12,
       },
     input:{
         width: "95%",
@@ -45,9 +45,9 @@ const styles = StyleSheet.create({
         borderBottomColor: "white",
         borderBottomWidth: 1,
         color:'white',
-        height:50,
+        height: 45,
         margin: 12,
-        paddingLeft: 15,
+        paddingLeft: 10,
     },
     inputFI :{
         width: "100%",
@@ -56,9 +56,9 @@ const styles = StyleSheet.create({
         borderBottomColor: "white", 
         borderBottomWidth: 1,
         color:'white',
-        height:50,
+        height: 45,
         margin: 12,
-        paddingLeft: 15,
+        paddingLeft: 10,
     },
 
     feetNInch : {
