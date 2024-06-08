@@ -4,28 +4,33 @@ import Resultbmi from "./ResultImc/";
 import styles from "./style";
 
 export default function Form() {
-    const [height, setHeight] = useState(null);
+    const [feet, setFeet] = useState(null);
+    const [inches, setInches] = useState(null);
     const [weight, setWeight] = useState(null);
-    const [messageBmi, setmessageBmi] = useState("");
+    const [messageBmi, setMessageBmi] = useState("");
     const [bmi, setBmi] = useState(null);
     const [textButton, setTextButton] = useState("Calculate");
 
     function bmiCalculator() {
-        return setBmi((weight / (height * height)).toFixed(2));
+        const feetInMeters = parseFloat(feet) * 0.3048;
+        const inchesInMeters = (parseFloat(inches) || 0) * 0.0254;
+        const heightInMeters = feetInMeters + inchesInMeters;
+        return setBmi((weight / (heightInMeters * heightInMeters)).toFixed(2));
     }
 
     function validationBmi() {
-        if (weight != null && height != null) {
+        if (weight != null && feet != null) {
             bmiCalculator();
-            setHeight(null);
+            setFeet(null);
+            setInches(null);
             setWeight(null);
-            setmessageBmi("");
+            setMessageBmi("");
             setTextButton("Calculate");
             return;
         }
         setBmi(null);
         setTextButton("Calculate");
-        setmessageBmi("Fill in the weight and height!");
+        setMessageBmi("Please fill in the weight & height!");
     }
 
     return (
@@ -33,27 +38,40 @@ export default function Form() {
             <View style={styles.form}>
                 <Text style={styles.formLabel}>Weight</Text>
                 <View style={styles.inputContainer}>
-                {!weight && <Text style={styles.placeholder}>Enter your Weight</Text>}
-                <TextInput
-                    style={styles.input}
-                    onChangeText={setWeight}
-                    value={weight}
-                    keyboardType="numeric"
-                />
-                </View>
-                <Text style={styles.formLabel}>Height</Text>
-                <View style={styles.inputContainer}>
-                    {!height && (
+                    {!weight && (
                         <Text style={styles.placeholder}>
-                            Enter your height
+                            Enter your Weight (KG)
                         </Text>
                     )}
                     <TextInput
                         style={styles.input}
-                        onChangeText={setHeight}
-                        value={height}
+                        onChangeText={setWeight}
+                        value={weight}
                         keyboardType="numeric"
                     />
+                </View>
+                <Text style={styles.formLabel}>Height</Text>
+                <View style={styles.feetNInch}>
+                    <View style={styles.inputContainerFI}>
+                        {!feet && <Text style={styles.placeholder}>Feet</Text>}
+                        <TextInput
+                            style={styles.inputFI}
+                            onChangeText={setFeet}
+                            value={feet}
+                            keyboardType="numeric"
+                        />
+                    </View>
+                    <View style={styles.inputContainerFI}>
+                        {!inches && (
+                            <Text style={styles.placeholder}>Inches</Text>
+                        )}
+                        <TextInput
+                            style={styles.inputFI}
+                            onChangeText={setInches}
+                            value={inches}
+                            keyboardType="numeric"
+                        />
+                    </View>
                 </View>
                 <TouchableOpacity
                     style={styles.buttonCalculator}
