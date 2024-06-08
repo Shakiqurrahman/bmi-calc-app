@@ -24,6 +24,7 @@ export default function ResultImc(props) {
       <Text style={styles.bmiTitle}>{props.Resultbmi && "Your BMI"}</Text>
       <Text style={styles.numberImc}>{props.Resultbmi}</Text>
       {message !== "" && <Text style={styles.information}>{message}</Text>}
+      {message !== "" && <Text style={styles.idealWeight}>Ideal Weight Range: {props.idealWeightRange.min} kg - {props.idealWeightRange.max} kg</Text>}
     </View>
   );
 }

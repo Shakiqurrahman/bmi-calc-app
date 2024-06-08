@@ -4,10 +4,10 @@
     "slug": "my-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/bmi-calc-tahmid.png",
+    "icon": "./assets/BMi.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/bmi-calc-tahmid.png",
+      "image": "./assets/BMi.png",
       "resizeMode": "contain",
       "backgroundColor": "#000"
     },
@@ -19,13 +19,13 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/bmi-calc-tahmid.png",
+        "foregroundImage": "./assets/BMi.png",
         "backgroundColor": "#000"
       },
       "package": "com.shakiqurrahman.myapp"
     },
     "web": {
-      "favicon": "./assets/bmi-calc-tahmid.png"
+      "favicon": "./assets/BMi.png"
     },
     "extra": {
       "eas": {

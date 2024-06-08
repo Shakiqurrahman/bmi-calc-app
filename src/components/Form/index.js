@@ -10,11 +10,18 @@ export default function Form() {
     const [messageBmi, setMessageBmi] = useState("");
     const [bmi, setBmi] = useState(null);
     const [textButton, setTextButton] = useState("Calculate");
+    const [idealWeightRange, setIdealWeightRange] = useState({ min: null, max: null });
 
     function bmiCalculator() {
         const feetInMeters = parseFloat(feet) * 0.3048;
         const inchesInMeters = (parseFloat(inches) || 0) * 0.0254;
         const heightInMeters = feetInMeters + inchesInMeters;
+
+         // Calculate the ideal weight range
+         const minWeight = (18.5 * heightInMeters * heightInMeters).toFixed(2);
+         const maxWeight = (24.9 * heightInMeters * heightInMeters).toFixed(2);
+         setIdealWeightRange({ min: minWeight, max: maxWeight });
+
         return setBmi((weight / (heightInMeters * heightInMeters)).toFixed(2));
     }
 
@@ -88,7 +95,7 @@ export default function Form() {
                     {messageBmi !== null && messageBmi}
                 </Text>
             </View>
-            <Resultbmi messageResultBmi={messageBmi} Resultbmi={bmi} />
+            <Resultbmi messageResultBmi={messageBmi} Resultbmi={bmi} idealWeightRange={idealWeightRange}/>
         </View>
     );
 }
